@@ -7,7 +7,7 @@ def strategy(game):
     return 'East'
 
 engine = pyvin.Engine(
-    key='bsy9nnr5',
+    key='*******',
     turns=5,
     map='m1',
     strategy=strategy)
