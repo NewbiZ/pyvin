@@ -47,7 +47,8 @@ class Map:
 
     def display(self, indent=0):
         disp_indent = lambda n: '    '*n
-        print '[Map]'
+        #print '[Map]'
+        print ''
         print disp_indent(indent+1) + '      ',
         x = 0
         for col in self.items[0]:

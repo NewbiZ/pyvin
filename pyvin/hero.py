@@ -1,9 +1,9 @@
 class Hero:
     def __init__(self, response):
         self.life = response['life']
-        self.elo = response['elo']
+        self.elo = response.get('elo', 0) # Bots have no elo
         self.gold = response['gold']
-        self.userId = response['userId']
+        self.userId = response.get('userId', 'bot') # Bot have no userId
         self.position = tuple(response['pos'].values())
         self.spawn = tuple(response['spawnPos'].values())
         self.crashed = response['crashed']
